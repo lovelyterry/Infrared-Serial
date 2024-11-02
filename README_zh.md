@@ -76,7 +76,7 @@ Infrared-系列产品，是一款集成光学透镜的高性能、高质量数�
 
 <div align=center><img src="./assets/apname.jpg"></div>
 
-连接上，连接完成后在浏览器中输入[http://192.168.4.1]，等待网页加载完成，即可显示热成像画面。
+连接上，连接完成后在浏览器中输入[http://192.168.4.1](http://192.168.4.1)，等待网页加载完成，即可显示热成像画面。
 
 <div align=center><img src="./assets/indexpage.jpg"></div>
 
@@ -85,7 +85,7 @@ Infrared-系列产品，是一款集成光学透镜的高性能、高质量数�
 ## 局域网连接
 当您的设备直接连接模块时，您的设备可能无法上网，所以建议您以WiFi station模式使用模块，在室内使用时可以连接路由器，便携使用时可以连接手机热点。
 
-直连模块后，打开浏览器输入[http://192.168.4.1/wifi](http://192.168.4.1，)进入网络配置页面，此时网页上会显示可用的Wi-Fi列表。
+直连模块后，打开浏览器输入[http://192.168.4.1/wifi](http://192.168.4.1/wifi)，进入网络配置页面，此时网页上会显示可用的Wi-Fi列表。
 
 <div align=center><img src="./assets/wifilist.jpg" width="50%" height="50%" ></div>
 
@@ -100,7 +100,7 @@ Infrared-系列产品，是一款集成光学透镜的高性能、高质量数�
 
 - 在上一章中我们提到，当模块连接上Wi-Fi后，会出现一个名称为“INFRAED-[IP ADDRDSS]”的新热点，您可以通过这个“IP ADDRDSS”来访问网页。
 
-- 如果您使用的设备支持mDNS功能，如IOS、Mac、Windows（带chrome内核浏览器），或者Android 12以上系统的设备，可以直接在浏览器中输入 http://infrared.local 来访问模块。如果您使用的设备不支持mDNS功能，可以通过安装mDNS软件来访问设备。使用代理软件时mDNS功能不可用，建议关闭代理软件后再尝试。
+- 如果您使用的设备支持mDNS功能，如IOS、Mac、Windows（带chrome内核浏览器），或者Android 12以上系统的设备，可以直接在浏览器中输入[http://infrared.local](http://infrared.local) 来访问模块。如果您使用的设备不支持mDNS功能，可以通过安装mDNS软件来访问设备。使用代理软件时mDNS功能不可用，建议关闭代理软件后再尝试。
 
 - 如果模块有屏幕，可以进入设置页面，扫描二维码访问网页。
 
