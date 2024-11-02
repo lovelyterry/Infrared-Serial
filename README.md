@@ -1,16 +1,30 @@
 <font size=7><font color=CornflowerBlue>Infrared-Serial</font></h1></font>
 ==========================================================================
 
+**Read this in other languages: [English](README.md), [中文](README_zh.md).**
+**其他语言版本: [English](README.md), [中文](README_zh.md).**
+
 Infrared thermal imaging temperature measurement module
 -------------------------------------------------------
 User's Guide
 ------------
 
 Please make sure to read this manual before using this module.
-<div align=center><img src="./assets/mini.jpg"></div>
+
+
+<div align=center><img src="./Infrared-pro/photo/20241031235112.jpg" width="50%" height="50%" ></div>
+<div align=center>Infrared-pro</div>
+<div align=center>Touch screen and battery with all mini's function.</div>
+
+--------------------------------------------
+
+<div align=center><img src="./Infrared-mini/photo/20241031234857.jpg" width="50%" height="50%" ></div>
+<div align=center>Infrared-mini</div>
+<div align=center>No screen, using WiFi screen cast. this for geeks only.</div>
+
 
 ## Before using the module
-Thank you for choosing “Infrared-Serial”, the infrared thermal imaging temperature measurement module. This manual explains how to operate the infrared thermal imaging temperature measurement module and the precautions that need to be observed during the operation. To get more information about the infrared thermal imaging temperature measurement module and effectively use the infrared thermal imaging temperature measurement module. Please make sure to read this instruction manual before use. After reading this manual, please keep it in a safe place for quick reference when needed. When you forget how to operate the infrared thermal imaging temperature measurement module, this manual will help you.
+Thank you for choosing “Infrared-Serial”, the infrared thermal imaging temperature measurement module. This manual explains how to operate the infrared thermal imaging temperature measurement module and the precautions that need to be observed during the operation. Please make sure to read this instruction manual before use.
 
 **Please note:**
 - This manual is protected by copyright law, without the written consent of the copyright owner, it is not allowed to copy or reproduce this manual all or part of the book. However, photocopies of this manual may be made for operating the equipment.
@@ -23,9 +37,7 @@ Thank you for choosing “Infrared-Serial”, the infrared thermal imaging tempe
 
 ## Product Introduction
 ### Application Scenario
-The Infrared-Serial, is a 32\*32 pixel thermopile infrared array temperature measurement module with high performance and high-quality digital signals integrated with optical lenses.
-
-It can be widely used in human body temperature measurement, heat source tracking, experimental observation, circuit maintenance, robots and other scenarios.
+The Infrared-Serial, is a 32\*32 pixel thermopile infrared array temperature measurement module with high performance and high-quality digital signals integrated with optical lenses. It can be widely used in human body temperature measurement, heat source tracking, experimental observation, circuit maintenance, robots and other scenarios.
 
 The module has excellent platform compatibility and can run on Windows, Mac, Linux, Android, IOS , ROS and other operating systems, as long as the platform supports Wi-Fi and has a modern browser . And there is no need to download any APP, just open the browser to display the thermal imaging screen, bringing better display effect and interactive experience.
 
@@ -51,6 +63,12 @@ The module has excellent platform compatibility and can run on Windows, Mac, Lin
 Please install it in a safe area without explosive or flammable gas, and the equipment has no explosion-proof grade.
 Working environment: -20-85℃, humidity ≤95%RH, no frost.
 Storage environment: -20-85℃, humidity ≤95%RH, no frost.
+
+<font color='orange'>
+Warning:
+Do not aim at the source of strong radiation Like welding arcs, sunlight, lasers! Otherwise, <font color='red'>irreversible damage</font> may be caused to the sensor!
+</font>
+
 
 ### Performance Parameters
 - Sensor pixels: 32*32 (1024 pixels)
@@ -90,7 +108,7 @@ After the network configuration is completed, You have several ways to access it
 
 - In the last chapter we mentioned a new hotspot named as "INFRAED-[IP ADDRDSS]" will be appear when the module connect to a Wi-Fi, and you can use this "IP ADDRDSS" to access the webpage.
 
-- If the device you are using supports the mDNS function, such as IOS, Mac, Windows (with chrome kernel browser), or devices with Android 12 system or above. You can directly enter http://infrared.local/ in your browser to access the module. If the device you are using does not support the mDNS function, you can access the device by installing mDNS software, such as "Network Service Discovery". mDNS function is not available when using the proxy software , it is recommended to try after closing the proxy software.
+- If the device you are using supports the mDNS function, such as IOS, Mac, Windows (with chrome kernel browser), or devices with Android 12 system or above. You can directly enter http://infrared.local/ in your browser to access the module. If the device you are using does not support the mDNS function, you can access the device by installing mDNS software. mDNS function is not available when using the proxy software , it is recommended to try after closing the proxy software.
 
 - If the module has screen, you can enter the setting page and scan the QR code to access webpage.
  
@@ -106,7 +124,7 @@ In the infrared-Serial, different temperature levels are displayed as different 
 The figure below shows the display effect under different color schemes. There are too many color schemes, so we don’t want to show too much.
 <div align=center><img src="./assets/color_figure.jpg"></div>
 
-### Temperature label
+### Temperature Label
 Coldest / Highest / Fixure temperature points in the screen can be highlighted, and the temperature can be displayed. Turning on the Fixure, tap a certain position on the main screen to display the temperature at that position. And the temperature will show in Chart.
 
 <div align=center><img src="./assets/templable.png"></div>
@@ -119,7 +137,7 @@ This module supports the function of recording the temperature curve of a certai
 The module supports horizontal mirroring, vertical mirroring, and 90°, 180°, 270° rotating images. It is convenient for you to install and use at all angles.
 <div align=center><img src="./assets/rotate.png"><img src="./assets/mirror.png"></div>
 
-### Temperature scale
+### Temperature Units
 The module supports switching between 4 temperature scale, namely Celsius, Fahrenheit, Kelvin, and Rankine.
 <div align=center><img src="./assets/tempscale.png"></div>
 
@@ -150,7 +168,8 @@ If the gamma parameter is enlarged, the details of the low-temperature range wil
 
 ### Calibration
 The temperature measured by thermal imaging is for reference only. It will be affected by various factors in actual use. The module supports manual adjustment of intercept and slope . If the user has the conditions to measure the real temperature curve of the object to be measured and the thermal imaging module in the corresponding situation In the temperature curve, the temperature curve of the two can be fitted to a straight line by the least square method, and then the slope and intercept can be set so that the temperature measurement straight line of the thermal imaging module is basically consistent with the real temperature straight line, and the calibration can be completed.
-<!-- In addition, individual pixels may have some temperature drift. This deviation can be calibrated by shielding the sensor with an object with a consistent temperature and clicking the “Calibration” button. -->
+
+In addition, individual pixels may have some temperature drift. This deviation can be calibrated by shielding the sensor with an object with a consistent temperature and clicking the “Calibration” button.
 <div align=center><img src="./assets/calibration.png"></div>
 
 ### Visit webpage
@@ -160,10 +179,16 @@ The slider below the QR code indicates how long it will take for the WiFi to be 
 <div align=center><img src="./assets/webpage.png"></div>
 
 ### Language
-This module supports 7 languages, you can switch to the language you are familiar with.
+This module supports several languages, you can switch to the language you are familiar with.
 <div align=center><img src="./assets/language.png"></div>
   
 ### Factory reset
 Long press this button to do a factory reset and reboot.
 <div align=center><img src="./assets/reset.png"></div>
 
+
+### Other
+**If you are a developer and want to do secondary development, please read the developer manuals: [Developer Manauals](develop/README.md)**
+
+### Contact
+E-mail: chenqt123@qq.com
