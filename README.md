@@ -166,6 +166,10 @@ Gamma correction is used to adjust the high temperature range or low temperature
 If the gamma parameter is enlarged, the details of the low-temperature range will be more obvious. If the gamma parameter is reduced, the details of the high-temperature range will be more obvious. The following figure shows the effect of adjusting the gamma parameter under the default color scheme, the left figure The gamma parameter of is 2.0, and the gamma parameter of the right picture is 0.5.
 <div align=center><img src="./assets/gamma_image.png"></div>
 
+### Karman
+By setting the Kalman filter to improve image quality stability, the smaller the parameter Q and the larger the parameter R, the higher the stability of the image. However, this leads to a poorer transient response to temperature changes, making it suitable for capturing stationary objects with minimal temperature variation. To reduce image quality delay, the Kalman filter is turned off by default (if either Q or R is set to 0, the filter is disabled). The recommended parameters are: [Q: 1.0, R: 0.5].
+<div align=center><img src="./assets/karman.png"></div>
+
 ### Calibration
 The temperature measured by thermal imaging is for reference only. It will be affected by various factors in actual use. The module supports manual adjustment of intercept and slope . If the user has the conditions to measure the real temperature curve of the object to be measured and the thermal imaging module in the corresponding situation In the temperature curve, the temperature curve of the two can be fitted to a straight line by the least square method, and then the slope and intercept can be set so that the temperature measurement straight line of the thermal imaging module is basically consistent with the real temperature straight line, and the calibration can be completed.
 
