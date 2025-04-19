@@ -171,7 +171,7 @@ By setting the Kalman filter to improve image quality stability, the smaller the
 <div align=center><img src="./assets/karman.png"></div>
 
 ### Calibration
-The temperature measured by thermal imaging is for reference only. It will be affected by various factors in actual use. The module supports manual adjustment of intercept and slope . If the user has the conditions to measure the real temperature curve of the object to be measured and the thermal imaging module in the corresponding situation In the temperature curve, the temperature curve of the two can be fitted to a straight line by the least square method, and then the slope and intercept can be set so that the temperature measurement straight line of the thermal imaging module is basically consistent with the real temperature straight line, and the calibration can be completed.
+The temperature measured by thermal imaging is for reference only. It will be affected by various factors in actual use. The module supports manual adjustment of intercept and slope . If the user has the conditions to measure the real temperature curve of the object to be measured and the thermal imaging module in the corresponding situation In the temperature curve, the temperature curve of the two can be fitted to a straight line by the least square method, and then the slope and intercept can be set so that the temperature measurement straight line of the thermal imaging module is basically consistent with the real temperature straight line, and the calibration can be completed.(For example, if the measured temperature is 1 degree lower than the actual temperature, the intercept is set to +1, and if it is 1 degree higher, it is set to -1. The slope generally does not need to be set.)
 
 In addition, individual pixels may have some temperature drift. This deviation can be calibrated by shielding the sensor with an object with a consistent temperature and clicking the “Calibration” button.
 <div align=center><img src="./assets/calibration.png"></div>
@@ -190,7 +190,7 @@ This module supports several languages, you can switch to the language you are f
 Long press this button to do a factory reset and reboot.
 <div align=center><img src="./assets/reset.png"></div>
 
-### So where can you buy it?
+### So where can buy it?
 Please scan the QR code below or click the link below to go directly to the official store ^^
 <div align=center><img src="./assets/shop.png"></div>
 <div style="text-align: center;">
