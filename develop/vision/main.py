@@ -8,18 +8,21 @@ infrared = Infrared()
 serial = Serial()
 tcp = Tcp("192.168.4.1")
 
-
 port = serial
 
 # 这是将python脚本编译成exe的命令，不用理会
 """
-nuitka.bat --standalone --show-progress --enable-plugin=numpy --show-memory --onefile --output-dir=out main.py
+nuitka.bat --standalone --show-progress --enable-plugin=tk-inter --show-memory --onefile --output-dir=out main.py
 """
 
 if __name__ == '__main__':
     # step 1: 打开连接
     port.open()
     try:
+        # 串口需要先切换到MSGPACK模式，TCP和UDP默认使用MSGPACK模式，不用切换
+        if (port == serial):
+            port.send(b"serial msgpack\r\n")
+
         while True:
             # step 3: 从模块中获取红外数据帧
             data = port.recv()

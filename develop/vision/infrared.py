@@ -4,6 +4,7 @@ import numpy as np
 import msgpack
 import struct
 import cv2
+from datetime import datetime
 
 crc32_table = [
     0x00000000, 0x77073096, 0xEE0E612C, 0x990951BA,
@@ -116,6 +117,8 @@ class Infrared:
         if (tempMatrix is None):
             return None
         print("\n\n")
+        print(datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S.%f")[:-3])  # 去掉最后 3 位，保留毫秒
         print('\n'.join([' '.join(['{:.1f}'.format(item)
                                    for item in row]) for row in tempMatrix]))
 

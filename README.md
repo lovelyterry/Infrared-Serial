@@ -190,6 +190,12 @@ This module supports several languages, you can switch to the language you are f
 Long press this button to do a factory reset and reboot.
 <div align=center><img src="./assets/reset.png"></div>
 
+### So where can you buy it?
+Please scan the QR code below or click the link below to go directly to the official store ^^
+<div align=center><img src="./assets/shop.png"></div>
+<div style="text-align: center;">
+  <a href="https://shop237247974.taobao.com/" target="_blank">Click here to go directly to the link 🚀</a>
+</div>
 
 ### Other
 **If you are a developer and want to do secondary development, please read the developer manuals: [Developer Manauals](develop/README.md)**

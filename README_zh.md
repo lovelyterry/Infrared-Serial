@@ -116,7 +116,7 @@ Infrared-系列产品，是一款集成光学透镜的高性能、高质量数�
 下图是不同配色方案下的显示效果，配色方案太多了，就不展示太多了。
 <div align=center><img src="./assets/color_figure.jpg"></div>
 
-### Temperature Label
+### 温度标签
 屏幕上最低 / 最高 / 固定点测温点可以高亮显示，并显示温度。打开固定点测温，点击主屏幕上的某个位置，显示该位置的温度。温度将显示在温度曲线中。
 
 <div align=center><img src="./assets/templable.png"></div>
@@ -181,6 +181,12 @@ Infrared-系列产品，是一款集成光学透镜的高性能、高质量数�
 长按此按钮可恢复出厂设置并重新启动。
 <div align=center><img src="./assets/reset.png"></div>
 
+### 那么在哪里能买到它呢？
+请扫描下方二维码或点击下方链接直达官方店铺 ^^
+<div align=center><img src="./assets/shop.png"></div>
+<div style="text-align: center;">
+  <a href="https://shop237247974.taobao.com/" target="_blank">点击这里链接直达🚀</a>
+</div>
 
 ### 其他
 **如果你是开发者，想要进行二次开发，请阅读开发者手册: [开发者手册](develop/README.md)**
